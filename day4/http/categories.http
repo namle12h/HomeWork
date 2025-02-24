@@ -1,0 +1,24 @@
+### GET ALL
+GET http://localhost:3000/categories
+
+### GET One
+GET http://localhost:3000/categories/1
+
+### Create
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+  "name": "Clothing"
+}
+
+### Update
+PUT http://localhost:3000/categories/1
+Content-Type: application/json
+
+{
+  "name": "Updated Electronics"
+}
+
+### Delete
+DELETE http://localhost:3000/categories/1
