@@ -1,0 +1,27 @@
+
+### GET ALL ORDERS
+GET http://localhost:3000/orders
+
+### GET ONE ORDER
+GET http://localhost:3000/orders/2
+
+### CREATE ORDER
+POST http://localhost:3000/orders
+Content-Type: application/json
+
+{
+  "order_id": 1001,
+  "customer_name": "Nguyen Van C",
+  "total_price": 5000000
+}
+
+### UPDATE ORDER
+PUT http://localhost:3000/orders/1
+Content-Type: application/json
+
+{
+  "total_price": 5500000
+}
+
+### DELETE ORDER
+DELETE http://localhost:3000/orders/3

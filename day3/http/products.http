@@ -1,0 +1,25 @@
+### GET ALL PRODUCTS
+GET http://localhost:3000/products
+
+### GET ONE PRODUCT
+GET http://localhost:3000/products/2
+
+### CREATE PRODUCT
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "product_name": "Laptop Gaming",
+  "description": "Laptop gaming cấu hình cao"
+}
+
+### UPDATE PRODUCT
+PUT http://localhost:3000/products/1
+Content-Type: application/json
+
+{
+  "product_name": "Laptop Văn Phòng"
+}
+
+### DELETE PRODUCT
+DELETE http://localhost:3000/products/3

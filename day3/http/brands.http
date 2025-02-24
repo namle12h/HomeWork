@@ -1,0 +1,25 @@
+### GET ALL BRANDS
+GET http://localhost:3000/brands
+
+### GET ONE BRAND
+GET http://localhost:3000/brands/2
+
+### CREATE BRAND
+POST http://localhost:3000/brands
+Content-Type: application/json
+
+{
+  "brand_name": "Apple",
+  "description": "Thương hiệu công nghệ"
+}
+
+### UPDATE BRAND
+PUT http://localhost:3000/brands/1
+Content-Type: application/json
+
+{
+  "brand_name": "Samsung"
+}
+
+### DELETE BRAND
+DELETE http://localhost:3000/brands/3

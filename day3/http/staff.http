@@ -1,0 +1,28 @@
+
+
+### GET ALL STAFFS
+GET http://localhost:3000/staffs
+
+### GET ONE STAFF
+GET http://localhost:3000/staffs/2
+
+### CREATE STAFF
+POST http://localhost:3000/staffs
+Content-Type: application/json
+
+{
+  "staff_name": "Nguyen Van A",
+  "position": "Quản lý"
+}
+
+### UPDATE STAFF
+PUT http://localhost:3000/staffs/1
+Content-Type: application/json
+
+{
+  "staff_name": "Tran Van B"
+}
+
+### DELETE STAFF
+DELETE http://localhost:3000/staffs/3
+
